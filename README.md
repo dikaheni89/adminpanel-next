@@ -1,5 +1,5 @@
 # Admin panel Template
-![alt text](https://imageupload.io/iJbFcDwU9bYHVye)
+![alt text](https://imageupload.io/ib/JFh0XNzpt52rPR2_1697030888.png)
 
 ## Getting Started
 
