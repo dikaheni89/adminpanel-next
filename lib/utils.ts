@@ -1,0 +1,21 @@
+import { type ClassValue, clsx } from "clsx"
+import { twMerge } from "tailwind-merge"
+ 
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+
+export function formatDate(input: string | number): string {
+  const date = new Date(input)
+  return date.toLocaleDateString(
+    "id-ID", {
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    }
+  )
+}
+
+export function absoluteUrl(url: string) {
+  return url.startsWith("http") ? url : `https://www.beritagar.id${url}`
+}
