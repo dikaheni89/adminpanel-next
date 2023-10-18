@@ -1,6 +1,7 @@
-import Image from 'next/image'
 import { redirect } from 'next/navigation'
+import { getServerSession } from "next-auth";
 
 export default function Home() {
-  return redirect('/dashboard')
+
+  return redirect('/auth/login')
 }

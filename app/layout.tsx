@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 import type { Metadata } from 'next'
+import { SessionProvider } from 'next-auth/react'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,7 +22,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <SessionProvider>
+            {children}
+          </SessionProvider>
         </ThemeProvider>
         </body>
     </html>

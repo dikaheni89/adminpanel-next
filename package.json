@@ -8,21 +8,34 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "resolutions": {
+    "@types/react": "17.0.20",
+    "@types/react-dom": "17.0.20"
+  },
   "dependencies": {
+    "@prisma/client": "^5.1.1",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
+    "@whiskeysockets/baileys": "^6.5.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.284.0",
     "next": "13.5.4",
+    "next-auth": "^4.24.3",
     "next-themes": "^0.2.1",
+    "pbkdf2": "^3.1.2",
+    "random-hash": "^4.0.1",
     "react": "^18",
     "react-dom": "^18",
     "recharts": "^2.8.0",
     "tailwind-merge": "^1.14.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -32,7 +45,9 @@
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "postcss": "^8",
+    "prisma": "^5.4.2",
     "tailwindcss": "^3",
+    "ts-node": "^10.9.1",
     "typescript": "^5"
   }
 }
